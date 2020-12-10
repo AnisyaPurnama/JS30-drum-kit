@@ -1,49 +1,31 @@
-# Project Title
+# drum-kit Development Strategy
 
-project description
 
----
-
-## User Story Dependencies
-
-[Story Dependency Diagram](https://excalidraw.com/)
-
----
-
-## WIREFRAME
-
-![wireframe or figma]()
-
----
-
+--- 
+This site build base on Wes Bos's tutorial code on JavaScript30.
 ## 0.Setup
-
+- Create repository
+- Include a Lisence
+- Reconstruct the structure in Separation Of Concern concept. (`handlers`, `listeners`)
 ---
 
-## X. Story Name
+## 1.User Story: As a user I want to play digital drum with just press a keyboard.
+- Display a keyboard.
+- Create keydown function to activate audio sound of each key user pressed.
 
-> how much work do you think this step will take? small, medium, large?
+## 2. User Story: As a user I want play sounds.
+- Create a `/sounds`folder containing all of the .wav files.
+- `handlers play-sound.js` return audio sound of each key user pressed. The event handler linked audio sound.
+- `listener play-sound`will trigger the handlers data on `keydown`.
+- `handlers remove-transition.js` & `listeners remove-transition.js` will end the sound and remove sound transition on the key release.
+## 3. User Story: As a user I want a well-styled page
+- Add the background image to `/img` and apply it
+- Styled the keys
 
-**As a user I want to \_\_\_ so that \_\_\_**
-
-- [ ] _Given [context] when [a specific action is performed] then [a set of consequences should occur]_
-- [ ] ...
+> 
 
 ### REPO
-
-- This user story is developed on branch `_`.
-- This branch is merged to `master` branch after the acceptance criteria have been checked off.
-
-### Concern A
-
-- `file-name.js`: what is this file for? who is it assigned to?
-
-### Concern B
-
-- `file-name.js`: what is this file for? who is it assigned to?
-
-### ...
-
----
-
-## ...
+- Generate the JavaScript-30 starter repo.
+- Run the project locally
+- Push changes
+- Turn on GitHub pages
